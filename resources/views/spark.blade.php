@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="csrf-token" content="{{ csrf_token() }}">
+    <title>Spark_boot</title>
+    <link rel="stylesheet" href="build/assets/css/spark_boot.css">
+</head>
+<body>
+
+
+<!-- ===== SÓ A INTERFACE DO CHAT ===== -->
+<div id="chatbot-window">
+  <div class="chat-header">
+    <img src="build/assets/img/icon/logo.png" alt="Bot">
+    <span>Spark</span>
+  </div>
+
+  <div class="chat-body" id="chat-body">
+    <div class="msg bot">Olá👋, sou o Spark🤖, um chatboot criado pela DevSpark, que responde com base a perguntas armazenadas em nossa base de dados.Tente não mandar perguntas muito complexas e lembre-se que posso cometer erros.</div>
+  </div>
+
+  <div class="chat-footer">
+    <div class="chat-input-wrap">
+      <input type="text" id="chat-input" placeholder="Escreve a tua mensagem...">
+      <button class="chat-send-btn" id="chat-send-btn" aria-label="Enviar">
+        <svg viewBox="0 0 24 24" fill="currentColor">
+          <path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/>
+        </svg>
+      </button>
+    </div>
+  </div>
+</div>
+
+
+    <script src="build/assets/js/spark_boot.js"></script>
+</body>
+</html>
